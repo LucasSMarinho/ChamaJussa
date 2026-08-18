@@ -4,14 +4,16 @@ import React from "react";
 import { DetalheOS } from "./components/detalheos/DetalheOS";
 import { Perfil } from "./components/perfil/Perfil"
 import { CriarOS } from "./components/criaros/CriarOS";
+import {Notificacoes} from "./components/notificacoes/Notificacoes";
 
 export default function App() {
     return (
         // <MinhasOS />
         // <Login />
-        // <DetalheOS />
+        <DetalheOS />
         // <Perfil/>
-        <CriarOS />
+        // <CriarOS />
+        // <Notificacoes />
     );
 }
 

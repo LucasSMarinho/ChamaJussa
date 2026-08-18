@@ -1,146 +1,95 @@
 import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
+export const NotificacoesStyle = StyleSheet.create({
 
     container: {
         flex: 1,
-        backgroundColor: "#F4F2F2",
+        backgroundColor: "#F3F4F6",
+        padding: 15,
     },
 
-    // HEADER
-    header: {
-        height: 58,
-        // backgroundColor: "#F8E8A8",
-        justifyContent: "flex-end",
-        alignItems: "center",
-        paddingBottom: 10,
-    },
-
-    headerTitulo: {
-        fontSize: 16,
+    title: {
+        fontSize: 20,
         fontWeight: "bold",
-        color: "#4A421E",
+        color: "#222",
+        marginBottom: 20,
+        justifyContent: "center",
+        alignItems: "center",
+        display: "flex",
     },
-
-    // LISTA
+    icon: {
+        width: 22,
+        height: 22,
+        resizeMode: "contain",
+    },
     lista: {
         flex: 1,
-        paddingHorizontal: 17,
-        paddingTop: 28,
     },
 
-    // CARD
     card: {
-        width: "100%",
-        minHeight: 86,
-        // backgroundColor: "#E5C5C5",
-        borderRadius: 3,
-        marginBottom: 17,
+        backgroundColor: "#FFFFFF",
+        minHeight: 85,
+        borderRadius: 6,
+        marginBottom: 15,
+        padding: 12,
 
         flexDirection: "row",
         alignItems: "center",
-
-        paddingHorizontal: 10,
-
-        elevation: 3,
 
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
             height: 2,
         },
-        shadowOpacity: 0.18,
-        shadowRadius: 2,
+        shadowOpacity: 0.15,
+        shadowRadius: 3,
+
+        elevation: 3,
     },
 
-    // IMAGEM
-    imagem: {
-        width: 45,
-        height: 45,
-        borderRadius: 25,
-        backgroundColor: "#A7B9DC",
+    iconBox: {
+        width: 35,
+        height: 35,
+        borderRadius: 20,
+        backgroundColor: "#E8F7FF",
 
         justifyContent: "center",
         alignItems: "center",
 
-        marginRight: 8,
+        marginRight: 10,
     },
 
-    imagemTexto: {
-        fontSize: 15,
-        color: "#222",
+    icon: {
+        fontSize: 17,
     },
 
-    // CONTEÚDO
-    conteudo: {
+    info: {
         flex: 1,
-        paddingVertical: 8,
     },
 
-    titulo: {
+    cardTitle: {
         fontSize: 12,
         fontWeight: "bold",
-        color: "#272020",
-        marginBottom: 3,
+        color: "#222",
+        marginBottom: 5,
     },
 
-    texto: {
+    description: {
         fontSize: 10,
-        color: "#777070",
+        color: "#777",
         lineHeight: 14,
-        paddingRight: 5,
     },
 
-    // DATA E HORA
-    informacoes: {
-        flexDirection: "row",
-        justifyContent: "space-between",
-        marginTop: 3,
-    },
-
-    data: {
+    date: {
         fontSize: 9,
-        color: "#777070",
+        color: "#999",
+        marginTop: 5,
     },
 
-    hora: {
-        fontSize: 9,
-        color: "#777070",
-        marginRight: 8,
-    },
-
-    // FOOTER
-    footer: {
-        height: 61,
-        backgroundColor: "#E9E5E5",
-
-        flexDirection: "row",
-        justifyContent: "space-around",
-        alignItems: "center",
-
-        borderTopWidth: 1,
-        borderTopColor: "#D4D0D0",
-    },
-
-    menu: {
-        flex: 1,
-        alignItems: "center",
-        justifyContent: "center",
-    },
-
-    menuTexto: {
+    time: {
         fontSize: 9,
         color: "#777",
-        marginTop: 2,
-    },
-
-    menuTextoAtivo: {
-        fontSize: 9,
-        color: "#168EBB",
-        fontWeight: "bold",
-        marginTop: 2,
+        alignSelf: "flex-end",
     },
 
 });
-
-export default styles;

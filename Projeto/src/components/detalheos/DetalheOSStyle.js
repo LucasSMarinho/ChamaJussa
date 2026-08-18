@@ -27,6 +27,7 @@ export const DetalheOSStyle = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#CBBBB4",
     boderRadius: 20,
+    borderRadius: 7,
 
   },
   detalhes: {
@@ -104,6 +105,7 @@ export const DetalheOSStyle = StyleSheet.create({
     borderWidth: 1,
     boderRadius: 20,
     alignItems: "center",
+    borderRadius: 6,
   },
   buttonText: {
     color: "#3B4CCA",

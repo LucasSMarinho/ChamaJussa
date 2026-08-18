@@ -1,164 +1,148 @@
-import React from "react";
-import {
-    View,
-    Text,
-    ScrollView,
-    TouchableOpacity,
-    Image
-} from "react-native";
-import { Ionicons } from "@expo/vector-icons";
-import styles from "./NotificacoesStyle";
+import { View, Text, ScrollView, Image } from "react-native";
+import { NotificacoesStyle } from "./NotificacoesStyle";
+import { Footer } from "../footer/Footer";
 
-export default function Notificacoes() {
-
-    const notificacoes = [
-        {
-            titulo: "Ordem de Serviço finalizada",
-            texto: "Sua OS foi finalizada, logo ela voltará para sua sala.",
-            data: "22/06/2026",
-            hora: "16:03",
-        },
-        {
-            titulo: "Ordem de Serviço finalizada",
-            texto: "Sua OS foi finalizada, logo ela voltará para sua sala.",
-            data: "22/06/2026",
-            hora: "16:03",
-        },
-        {
-            titulo: "Ordem de Serviço finalizada",
-            texto: "Sua OS foi finalizada, logo ela voltará para sua sala.",
-            data: "22/06/2026",
-            hora: "16:03",
-        },
-        {
-            titulo: "Ordem de Serviço finalizada",
-            texto: "Sua OS foi finalizada, logo ela voltará para sua sala.",
-            data: "22/06/2026",
-            hora: "16:03",
-        },
-    ];
-
+export const Notificacoes = () => {
     return (
-        <View style={styles.container}>
+        <View style={NotificacoesStyle.container}>
 
-            {/* HEADER */}
-            <View style={styles.header}>
-                <Text style={styles.headerTitulo}>
-                    Notificações
-                </Text>
-            </View>
+            <Text style={NotificacoesStyle.title}>
+                Notificações
+            </Text>
 
-            {/* NOTIFICAÇÕES */}
-            <ScrollView
-                style={styles.lista}
-                showsVerticalScrollIndicator={false}
-            >
+            <ScrollView style={NotificacoesStyle.lista}>
 
-                {notificacoes.map((item, index) => (
+                <View style={NotificacoesStyle.card}>
 
-                    <TouchableOpacity
-                        key={index}
-                        style={styles.card}
-                    >
-
-                        {/* IMAGEM */}
+                    <View style={NotificacoesStyle.iconBox}>
                         <Image
-                            source={require("../../../assets/Notificacoes.png")}
-                            style={styles.imagem}
-                            resizeMode="cover"
+                            source={require("../../../assets/bullhorn.png")}
+                            style={NotificacoesStyle.icon}
                         />
+                    </View>
 
-                        {/* CONTEÚDO */}
-                        <View style={styles.conteudo}>
+                    <View style={NotificacoesStyle.info}>
 
-                            {/* TÍTULO */}
-                            <Text style={styles.titulo}>
-                                {item.titulo}
-                            </Text>
+                        <Text style={NotificacoesStyle.cardTitle}>
+                            Ordem de Serviço finalizada
+                        </Text>
 
-                            {/* TEXTO */}
-                            <Text style={styles.texto}>
-                                {item.texto}
-                            </Text>
+                        <Text style={NotificacoesStyle.description}>
+                            Sua OS foi finalizada, logo ela voltará para sua sala.
+                        </Text>
 
-                            {/* DATA E HORA */}
-                            <View style={styles.informacoes}>
+                        <Text style={NotificacoesStyle.date}>
+                            22/06/2026
+                        </Text>
 
-                                <Text style={styles.data}>
-                                    {item.data}
-                                </Text>
+                    </View>
 
-                                <Text style={styles.hora}>
-                                    {item.hora}
-                                </Text>
+                    <Text style={NotificacoesStyle.time}>
+                        16:03
+                    </Text>
 
-                            </View>
+                </View>
 
-                        </View>
 
-                    </TouchableOpacity>
+                <View style={NotificacoesStyle.card}>
 
-                ))}
+                    <View style={NotificacoesStyle.iconBox}>
+                        <Image
+                            source={require("../../../assets/bullhorn.png")}
+                            style={NotificacoesStyle.icon}
+                        />
+                    </View>
+
+                    <View style={NotificacoesStyle.info}>
+
+                        <Text style={NotificacoesStyle.cardTitle}>
+                            Ordem de Serviço finalizada
+                        </Text>
+
+                        <Text style={NotificacoesStyle.description}>
+                            Sua OS foi finalizada, logo ela voltará para sua sala.
+                        </Text>
+
+                        <Text style={NotificacoesStyle.date}>
+                            22/06/2026
+                        </Text>
+
+                    </View>
+
+                    <Text style={NotificacoesStyle.time}>
+                        16:03
+                    </Text>
+
+                </View>
+
+
+                <View style={NotificacoesStyle.card}>
+
+                    <View style={NotificacoesStyle.iconBox}>
+                        <Image
+                            source={require("../../../assets/bullhorn.png")}
+                            style={NotificacoesStyle.icon}
+                        />
+                    </View>
+
+                    <View style={NotificacoesStyle.info}>
+
+                        <Text style={NotificacoesStyle.cardTitle}>
+                            Ordem de Serviço finalizada
+                        </Text>
+
+                        <Text style={NotificacoesStyle.description}>
+                            Sua OS foi finalizada, logo ela voltará para sua sala.
+                        </Text>
+
+                        <Text style={NotificacoesStyle.date}>
+                            22/06/2026
+                        </Text>
+
+                    </View>
+
+                    <Text style={NotificacoesStyle.time}>
+                        16:03
+                    </Text>
+
+                </View>
+
+
+                <View style={NotificacoesStyle.card}>
+
+                    <View style={NotificacoesStyle.iconBox}>
+                        <Image
+                            source={require("../../../assets/bullhorn.png")}
+                            style={NotificacoesStyle.icon}
+                        />
+                    </View>
+
+                    <View style={NotificacoesStyle.info}>
+
+                        <Text style={NotificacoesStyle.cardTitle}>
+                            Ordem de Serviço finalizada
+                        </Text>
+
+                        <Text style={NotificacoesStyle.description}>
+                            Sua OS foi finalizada, logo ela voltará para sua sala.
+                        </Text>
+
+                        <Text style={NotificacoesStyle.date}>
+                            22/06/2026
+                        </Text>
+
+                    </View>
+
+                    <Text style={NotificacoesStyle.time}>
+                        16:03
+                    </Text>
+
+                </View>
 
             </ScrollView>
 
-            {/* FOOTER */}
-            <View style={styles.footer}>
-
-                {/* MINHAS OS */}
-                <TouchableOpacity style={styles.menu}>
-                    <Ionicons
-                        name="list-outline"
-                        size={22}
-                        color="#777"
-                    />
-
-                    <Text style={styles.menuTexto}>
-                        Minhas OS
-                    </Text>
-                </TouchableOpacity>
-
-                {/* CRIAR OS */}
-                <TouchableOpacity style={styles.menu}>
-                    <Ionicons
-                        name="add-circle-outline"
-                        size={24}
-                        color="#777"
-                    />
-
-                    <Text style={styles.menuTexto}>
-                        Criar OS
-                    </Text>
-                </TouchableOpacity>
-
-                {/* NOTIFICAÇÕES */}
-                <TouchableOpacity style={styles.menu}>
-                    <Ionicons
-                        name="notifications-outline"
-                        size={23}
-                        color="#168EBB"
-                    />
-
-                    <Text style={styles.menuTextoAtivo}>
-                        Notificações
-                    </Text>
-                </TouchableOpacity>
-
-                {/* PERFIL */}
-                <TouchableOpacity style={styles.menu}>
-                    <Ionicons
-                        name="person-outline"
-                        size={22}
-                        color="#777"
-                    />
-
-                    <Text style={styles.menuTexto}>
-                        Perfil
-                    </Text>
-                </TouchableOpacity>
-
-            </View>
+            <Footer />
 
         </View>
     );
-}
+};

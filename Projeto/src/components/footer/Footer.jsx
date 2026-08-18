@@ -16,7 +16,7 @@ export const Footer = () => {
     },
     {
       nome: 'Notificações',
-      icone: require('../../../assets/Notificacoes.png'),
+      icone: require('../../../assets/bullhorn.png'),
     },
     {
       nome: 'Perfil',
