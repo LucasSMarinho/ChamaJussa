@@ -6,6 +6,8 @@ import {
 } from "@expo-google-fonts/montserrat";
 import { LoginStyle } from "./LoginStyle";
 import { Image } from "react-native";
+import React from "react";
+
 
 export const Login = () => {
   const [fontsLoaded] = useFonts({

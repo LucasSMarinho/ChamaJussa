@@ -1,5 +1,7 @@
 import { ScrollView, View, Text, TouchableOpacity } from "react-native";
 import { MinhasOSStyle } from "./MinhasOSStyle";
+import React from "react";
+import { Footer } from "../footer/Footer";
 
 export const MinhasOS = () => {
     return (
@@ -81,7 +83,7 @@ export const MinhasOS = () => {
                     </Text>
 
                 </View>
-                
+
                 <View style={MinhasOSStyle.card}>
 
                     <View style={MinhasOSStyle.cardCabecalho}>
@@ -110,6 +112,8 @@ export const MinhasOS = () => {
                 </View>
 
             </ScrollView>
+            
+            <Footer />
 
         </View>
     );
