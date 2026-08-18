@@ -6,6 +6,8 @@ export const MinhasOSStyle = StyleSheet.create({
         backgroundColor: "#F4F5F7",
         padding: 15
     },
-
-    // restante dos estilos...
+    safeArea: {
+        flex: 1,
+        backgroundColor: '#F4F5F7',
+    }
 });
