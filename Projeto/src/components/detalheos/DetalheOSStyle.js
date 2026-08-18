@@ -23,8 +23,11 @@ export const DetalheOSStyle = StyleSheet.create({
   card: {
     flex: 1,
     backgroundColor: "#ffffff",
-    borderRadius: 8,
     padding: 16,
+    borderWidth: 1,
+    borderColor: "#CBBBB4",
+    boderRadius: 20,
+
   },
   detalhes: {
     marginBottom: 16,
@@ -48,7 +51,6 @@ export const DetalheOSStyle = StyleSheet.create({
   icon: {
     width: 22,
     height: 22,
-    resizeMode: "contain",
     marginRight: 12,
   },
   label: {
@@ -62,6 +64,7 @@ export const DetalheOSStyle = StyleSheet.create({
     color: "#221208",
     marginTop: 2,
   },
+
   descricao: {
     marginTop: 8,
     marginBottom: 16,
@@ -95,9 +98,11 @@ export const DetalheOSStyle = StyleSheet.create({
     paddingTop: 12,
   },
   button: {
-    backgroundColor: "#B3C2FC",
+    backgroundColor: "#ffffff",
     paddingVertical: 14,
-    borderRadius: 8,
+    borderColor: "#3B4CCA",
+    borderWidth: 1,
+    boderRadius: 20,
     alignItems: "center",
   },
   buttonText: {

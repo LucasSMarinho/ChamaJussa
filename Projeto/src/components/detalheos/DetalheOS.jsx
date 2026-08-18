@@ -2,10 +2,21 @@ import { View, Text, ScrollView, Image, TouchableOpacity } from "react-native";
 import { DetalheOSStyle } from "./DetalheOSStyle";
 import React from "react";
 import { Footer } from "../footer/Footer";
+import { useFonts, Montserrat_700Bold, Montserrat_300Light } from "@expo-google-fonts/montserrat";
 
 
 
 export const DetalheOS = () => {
+
+  const [fontsLoaded] = useFonts({
+    Montserrat_700Bold,
+    Montserrat_300Light,
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
     return (
         <View style={DetalheOSStyle.container}>
 

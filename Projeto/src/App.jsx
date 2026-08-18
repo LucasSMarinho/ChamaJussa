@@ -3,13 +3,15 @@ import {Login} from "./components/login/Login";
 import React from "react";
 import { DetalheOS } from "./components/detalheos/DetalheOS";
 import { Perfil } from "./components/perfil/Perfil"
+import { CriarOS } from "./components/criaros/CriarOS";
 
 export default function App() {
     return (
         // <MinhasOS />
         // <Login />
         // <DetalheOS />
-        <Perfil/>
+        // <Perfil/>
+        <CriarOS />
     );
 }
 

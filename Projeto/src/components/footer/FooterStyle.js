@@ -6,7 +6,7 @@ export const FooterStyle = StyleSheet.create({
     height: 65,
     backgroundColor: '#FFFFFF',
     flexDirection: 'row', 
-    justifyContent: 'space-around', 
+    justify: 'space-around', 
     alignItems: 'center',
     borderTopWidth: 1,
     borderTopColor: '#F0F0F0',
@@ -22,11 +22,6 @@ export const FooterStyle = StyleSheet.create({
     width: 24,
     height: 24,
     marginBottom: 4,
-    tintColor: '#777777',
-  },
-
-  iconeAtivo: {
-    tintColor: '#0A7EA4',
   },
 
   texto: {
