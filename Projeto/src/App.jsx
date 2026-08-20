@@ -17,8 +17,8 @@ export default function App() {
             <View style={MinhasOSStyle.container}>
                 {/* <MinhasOS />
                 <Login />
-                <DetalheOS />
-                <Perfil /> */}
+                <DetalheOS /> */}
+                {/* <Perfil />  */}
                 <CriarOS />
                 {/* <Notificacoes /> */}
                 <StatusBar style="auto" />

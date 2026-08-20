@@ -4,9 +4,7 @@ export const CriarOSStyle = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#F4F5F7",
-    paddingHorizontal: 16,
-    paddingTop: 20,
-    paddingBottom: 10,
+    paddingTop: 20,    
   },
   header: {
     fontSize: 22,
