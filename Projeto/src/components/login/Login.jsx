@@ -7,7 +7,8 @@ import { useState } from "react";
 
   export const Login = () => {
 
-   const [value, setValue] = useState("")
+   const [email, setEmail] = useState("")
+   const [senha, setSenha] = useState("")
 
   const [fontsLoaded] = useFonts({
     Montserrat_700Bold,
@@ -17,6 +18,7 @@ import { useState } from "react";
   if (!fontsLoaded) {
     return null;
   }
+
 
   return (
     <View style={LoginStyle.container}>
@@ -32,13 +34,13 @@ import { useState } from "react";
         <View style={LoginStyle.inputContainer}>
           <View style={LoginStyle.inputBox}>
             <Text style={LoginStyle.text}>E-mail</Text>
-            <TextInput style={LoginStyle.inputText} placeholder="E-mail" />
+            <TextInput style={LoginStyle.inputText} placeholder="E-mail" onChangeText={(text) => setEmail(text)}/>
           </View>
           <View style={LoginStyle.inputBox}>
             <Text style={LoginStyle.text}>Senha</Text>
-            <TextInput style={LoginStyle.inputText} placeholder="Senha" />
+            <TextInput style={LoginStyle.inputText} placeholder="Senha" onChangeText={(text) => setSenha(text)}/>
           </View>
-          <TouchableOpacity style={LoginStyle.button}>
+          <TouchableOpacity onPress={() => AcessarSistema()} style={LoginStyle.button} >
             <Text style={LoginStyle.buttonText}>Acessar o sistema</Text>
           </TouchableOpacity>
         </View>

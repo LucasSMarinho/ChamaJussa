@@ -108,14 +108,42 @@ export const MinhasOSStyle = StyleSheet.create({
     },
 
     status: {
-        backgroundColor: "#DCEAFF",
         paddingVertical: 4,
         paddingHorizontal: 10,
         borderRadius: 10
     },
 
+    statusFechada: {
+        backgroundColor: "#CE582185",
+    },
+
+    statusAberta: {
+        backgroundColor: "#DCEAFF",
+    },
+
+    statusAndamento: {
+        backgroundColor: "#8CCE2185",
+    },
+
     statusTexto: {
-        color: "#087CF0",
+        fontSize: 13,
+        fontWeight: "bold"
+    },
+
+    statusTextoAberta: {
+        color: "#2D87FF",
+        fontSize: 13,
+        fontWeight: "bold"
+    },
+
+    statusTextoAndamento: {
+        color: "#188D00",
+        fontSize: 13,
+        fontWeight: "bold"
+    },
+
+    statusTextoFechada: {
+        color: "#8D2D00",
         fontSize: 13,
         fontWeight: "bold"
     },

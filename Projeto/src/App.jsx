@@ -3,7 +3,7 @@ import { Login } from "./components/login/Login";
 import React from "react";
 import { DetalheOS } from "./components/detalheos/DetalheOS";
 import { Perfil } from "./components/perfil/Perfil"
-import { CriarOS } from "./components/criaros/CriarOS";
+import { CriarOS } from "./components/criarOs/CriarOS";
 import { Notificacoes } from "./components/notificacoes/Notificacoes";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
@@ -15,8 +15,8 @@ export default function App() {
         <SafeAreaProvider>
         <SafeAreaView style={MinhasOSStyle.safeArea}>
             <View style={MinhasOSStyle.container}>
-                {/* <MinhasOS /> */}
-                <Login />
+                <MinhasOS />
+                {/* <Login /> */}
                 {/* <DetalheOS />  */}
                 {/* <Perfil />  */}
                 {/* <CriarOS /> */}
