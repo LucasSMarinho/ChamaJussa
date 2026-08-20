@@ -16,8 +16,8 @@ export default function App() {
         <SafeAreaView style={MinhasOSStyle.safeArea}>
             <View style={MinhasOSStyle.container}>
                 {/* <MinhasOS /> */}
-                {/* <Login /> */}
-                <DetalheOS /> 
+                <Login />
+                {/* <DetalheOS />  */}
                 {/* <Perfil />  */}
                 {/* <CriarOS /> */}
                 {/* <Notificacoes /> */}

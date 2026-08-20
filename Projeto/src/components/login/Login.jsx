@@ -1,15 +1,14 @@
 import { View, Text, TouchableOpacity, TextInput } from "react-native";
-import {
-  useFonts,
-  Montserrat_700Bold,
-  Montserrat_300Light,
-} from "@expo-google-fonts/montserrat";
+import { useFonts, Montserrat_700Bold, Montserrat_300Light } from "@expo-google-fonts/montserrat";
 import { LoginStyle } from "./LoginStyle";
 import { Image } from "react-native";
-import React from "react";
+import { useState } from "react";
 
 
-export const Login = () => {
+  export const Login = () => {
+
+   const [value, setValue] = useState("")
+
   const [fontsLoaded] = useFonts({
     Montserrat_700Bold,
     Montserrat_300Light,
