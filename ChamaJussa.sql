@@ -1,7 +1,7 @@
 CREATE DATABASE ChamaJussa;
 GO
 
-USE OrdemServicoDB;
+USE ChamaJussa;
 GO
 
 CREATE TABLE Usuario
@@ -15,32 +15,31 @@ GO
 
 CREATE TABLE OrdemServico
 (
-    IdOrdemServico UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
-    IdUsuario VARCHAR(40) NOT NULL,
+    IdOrdemServico UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())),
     TituloProblema VARCHAR(150) NOT NULL,
     Equipamento VARCHAR(150),
     Local VARCHAR(150) NOT NULL,
     Descricao VARCHAR(500) NOT NULL,
     Imagem VARCHAR(255),
     Status VARCHAR(30) NOT NULL DEFAULT 'Aberta',
-
-    FOREIGN KEY (IdUsuario)
-    REFERENCES Usuario(IdUsuario)
+    IdUsuario VARCHAR(40) FOREIGN KEY REFERENCES Usuario(IdUsuario)
 );
 GO
 
 CREATE TABLE Notificacao
 (
-    IdNotificacao UNIQUEIDENTIFIER PRIMARY KEY DEFAULT NEWID(),
-    IdUsuario VARCHAR(40) NOT NULL,
-    IdOrdemServico UNIQUEIDENTIFIER NOT NULL,
+    IdNotificacao UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())),
     Mensagem VARCHAR(255) NOT NULL,
     Lida BIT NOT NULL DEFAULT 0,
-
-    FOREIGN KEY (IdUsuario)
-    REFERENCES Usuario(IdUsuario),
-
-    FOREIGN KEY (IdOrdemServico)
-    REFERENCES OrdemServico(IdOrdemServico)
+    IdUsuario VARCHAR(40) FOREIGN KEY REFERENCES Usuario(IdUsuario),
+    IdOrdemServico UNIQUEIDENTIFIER FOREIGN KEY REFERENCES OrdemServico(IdOrdemServico)
 );
 GO
+
+DROP DATABASE ChamaJussa
+
+SELECT * FROM Usuario
+
+SELECT * FROM OrdemServico
+
+SELECT * FROM Notificacao

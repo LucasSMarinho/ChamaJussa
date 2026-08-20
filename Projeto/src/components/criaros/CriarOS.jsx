@@ -28,6 +28,7 @@ export const CriarOS = () => {
     }
 
     return (
+
         <View style={CriarOSStyle.container}>
 
             <View style={CriarOSStyle.header}>
@@ -94,8 +95,9 @@ export const CriarOS = () => {
 
             </ScrollView>
 
-            <Footer />
 
+            <Footer />
         </View>
+        
     );
 }
