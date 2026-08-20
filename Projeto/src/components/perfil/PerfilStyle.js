@@ -2,20 +2,15 @@ import { StyleSheet } from "react-native";
 
 export const PerfilStyle = StyleSheet.create({
 
-  /*
-   * TELA
-   */
+
   container: {
     flex: 1,
     backgroundColor: "#F3F4F6",
   },
 
-  /*
-   * HEADER
-   */
   header: {
     height: 40,
-    backgroundColor: "#F4F5F7",
+    backgroundColor: "#F3F4F6",
 
     justifyContent: "center",
     alignItems: "flex-start",
@@ -32,9 +27,6 @@ export const PerfilStyle = StyleSheet.create({
     color: "#38321E",
   },
 
-  /*
-   * CONTEÚDO CENTRAL
-   */
   content: {
     flex: 1,
 
@@ -44,21 +36,19 @@ export const PerfilStyle = StyleSheet.create({
     paddingHorizontal: 13,
   },
 
-  /*
-   * CARD DO PERFIL
-   */
+
   profileCard: {
     width: "100%",
-    height: 177,
+    height: 300,
 
     backgroundColor: "#FFFFF",
 
     borderRadius: 3,
 
     alignItems: "center",
+    justifyContent: "center",
 
     paddingTop: 13,
-
     elevation: 3,
 
     shadowColor: "#000",
@@ -70,32 +60,22 @@ export const PerfilStyle = StyleSheet.create({
     shadowRadius: 2,
   },
 
-  /*
-   * TEXTO "VIEW"
-   */
   viewText: {
     position: "absolute",
 
-    left: 11,
-    top: 12,
-
     fontFamily: "Montserrat_300Light",
-    fontSize: 14,
+    fontSize: 17,
 
     color: "#222222",
   },
 
-  /*
-   * CÍRCULO DA FOTO
-   */
   imageContainer: {
-    width: 70,
-    height: 70,
+    width: 100,
+    height: 100,
+    borderRadius: 50,
 
-    borderRadius: 35,
-
-    overflow: "hidden",
-
+    objectFit: "cover",
+    objectPosition: "center",
     marginTop: 13,
 
     backgroundColor: "#A7D3EF",
@@ -105,13 +85,11 @@ export const PerfilStyle = StyleSheet.create({
   },
 
   profileImage: {
-    width: 70,
-    height: 70,
+    width: 100,
+    height: 100,
+    borderRadius: 50
   },
 
-  /*
-   * NOME
-   */
   name: {
     fontFamily: "Montserrat_700Bold",
 
@@ -122,9 +100,6 @@ export const PerfilStyle = StyleSheet.create({
     marginTop: 12,
   },
 
-  /*
-   * EMAIL
-   */
   email: {
     fontFamily: "Montserrat_300Light",
 
@@ -135,9 +110,7 @@ export const PerfilStyle = StyleSheet.create({
     marginTop: 5,
   },
 
-  /*
-   * BOTÃO SAIR
-   */
+
   logoutButton: {
     width: "100%",
     height: 26,
@@ -171,9 +144,7 @@ export const PerfilStyle = StyleSheet.create({
     color: "#FFFFFF",
   },
 
-  /*
-   * FOOTER
-   */
+
   footer: {
     height: 48,
 
@@ -188,9 +159,6 @@ export const PerfilStyle = StyleSheet.create({
     borderTopColor: "#D8D4D8",
   },
 
-  /*
-   * ITEM DO FOOTER
-   */
   footerItem: {
     flex: 1,
 
@@ -202,9 +170,7 @@ export const PerfilStyle = StyleSheet.create({
     gap: 2,
   },
 
-  /*
-   * TEXTO DO FOOTER
-   */
+
   footerText: {
     fontFamily: "Montserrat_300Light",
 
@@ -215,9 +181,7 @@ export const PerfilStyle = StyleSheet.create({
     textAlign: "center",
   },
 
-  /*
-   * ITEM ATIVO
-   */
+
   activeFooterText: {
     color: "#2196C9",
   },

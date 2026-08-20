@@ -30,10 +30,6 @@ export const Perfil = () => {
   return (
     <View style={PerfilStyle.container}>
 
- 
-      <View style={PerfilStyle.header}>
-       
-      </View>
 
     
       <View style={PerfilStyle.content}>
@@ -45,7 +41,7 @@ export const Perfil = () => {
   
           <View style={PerfilStyle.imageContainer}>
             <Image
-              source={require("../../../assets/Perfil.png")}
+              source={require("../../../assets/images.jpg")}
               style={PerfilStyle.profileImage}
               resizeMode="cover"
             />

@@ -15,11 +15,11 @@ export default function App() {
         <SafeAreaProvider>
         <SafeAreaView style={MinhasOSStyle.safeArea}>
             <View style={MinhasOSStyle.container}>
-                {/* <MinhasOS />
-                <Login />
-                <DetalheOS /> */}
+                {/* <MinhasOS /> */}
+                {/* <Login /> */}
+                <DetalheOS /> 
                 {/* <Perfil />  */}
-                <CriarOS />
+                {/* <CriarOS /> */}
                 {/* <Notificacoes /> */}
                 <StatusBar style="auto" />
             </View>

@@ -4,11 +4,12 @@ import { Footer } from "../footer/Footer";
 
 export const Notificacoes = () => {
     return (
-        <View style={NotificacoesStyle.container}>
-
+        <View style={NotificacoesStyle.containerNt}>
             <Text style={NotificacoesStyle.title}>
                 Notificações
             </Text>
+        <View style={NotificacoesStyle.container}>
+
 
             <ScrollView style={NotificacoesStyle.lista}>
 
@@ -141,8 +142,9 @@ export const Notificacoes = () => {
 
             </ScrollView>
 
-            <Footer />
 
+        </View>
+            <Footer />
         </View>
     );
 };

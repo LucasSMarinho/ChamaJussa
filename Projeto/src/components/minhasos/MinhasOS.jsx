@@ -5,8 +5,9 @@ import { Footer } from "../footer/Footer";
 
 export const MinhasOS = () => {
     return (
+        <View style={MinhasOSStyle.containerOs}>
         <View style={MinhasOSStyle.container}>
-
+       
             <View style={MinhasOSStyle.header}>
 
                 <View>
@@ -113,8 +114,8 @@ export const MinhasOS = () => {
 
             </ScrollView>
             
+        </View>
             <Footer />
-
         </View>
     );
 };

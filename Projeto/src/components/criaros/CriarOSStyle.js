@@ -4,8 +4,11 @@ export const CriarOSStyle = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#F4F5F7",
-    paddingTop: 20,    
+    paddingTop: 20,
+    width: "100%",   
+    alignItems: "center"
   },
+  
   header: {
     fontSize: 22,
     fontFamily: "Montserrat_700Bold",
@@ -22,15 +25,17 @@ export const CriarOSStyle = StyleSheet.create({
     justifyContent: "center",
   },
   card: {
-    flex: 1,
     backgroundColor: "#FFFFFF",
     borderRadius: 8,
+    paddingTop: 40,
+    paddingRight: 30,
+    paddingLeft: 30,
+    marginBottom: 20,
+    width: "90%",
   },
-  card: {
-    padding: 18,
-  },
+  
   componente: {
-    marginBottom: 16,
+    marginBottom: 12,
   },
   label: {
     fontSize: 14,

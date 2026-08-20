@@ -5,7 +5,15 @@ export const MinhasOSStyle = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#F4F5F7",
-        padding: 15
+        paddingLeft: 20,
+        paddingRight: 20,
+        paddingTop: 30
+    },
+
+    containerOs: {
+        flex: 1,
+        backgroundColor: "#F4F5F7",
+        
     },
 
     header: {
@@ -51,13 +59,13 @@ export const MinhasOSStyle = StyleSheet.create({
     filtroSelecionado: {
         backgroundColor: "#087CF0",
         paddingVertical: 5,
-        paddingHorizontal: 12,
+        paddingHorizontal: 24,
         borderRadius: 10
     },
 
     textoFiltroSelecionado: {
         color: "#fff",
-        fontSize: 10
+        fontSize: 15
     },
 
     filtro: {
@@ -71,7 +79,7 @@ export const MinhasOSStyle = StyleSheet.create({
 
     textoFiltro: {
         color: "#888",
-        fontSize: 10
+        fontSize: 14
     },
 
     lista: {
@@ -94,7 +102,7 @@ export const MinhasOSStyle = StyleSheet.create({
     },
 
     numeroOS: {
-        fontSize: 13,
+        fontSize: 17,
         fontWeight: "bold",
         color: "#087CF0"
     },
@@ -108,12 +116,12 @@ export const MinhasOSStyle = StyleSheet.create({
 
     statusTexto: {
         color: "#087CF0",
-        fontSize: 9,
+        fontSize: 13,
         fontWeight: "bold"
     },
 
     tituloOS: {
-        fontSize: 13,
+        fontSize: 16,
         fontWeight: "bold",
         color: "#333",
         marginTop: 10,
@@ -121,9 +129,9 @@ export const MinhasOSStyle = StyleSheet.create({
     },
 
     descricao: {
-        fontSize: 10,
+        fontSize: 14,
         color: "#777",
-        lineHeight: 15
+        lineHeight: 18
     }
 
 });

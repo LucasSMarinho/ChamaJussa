@@ -18,6 +18,7 @@ export const DetalheOS = () => {
   }
 
     return (
+        <View style={DetalheOSStyle.containerDetalheOs}>
         <View style={DetalheOSStyle.container}>
 
             <View style={DetalheOSStyle.header}>
@@ -94,6 +95,7 @@ export const DetalheOS = () => {
                 </TouchableOpacity>
             </View>
 
+               </View>
             <Footer />
 
         </View>

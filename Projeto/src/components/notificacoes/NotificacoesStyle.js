@@ -5,7 +5,18 @@ export const NotificacoesStyle = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#F3F4F6",
-        padding: 15,
+        
+        paddingLeft: 20,
+        paddingRight: 20,
+
+        width: '100%',
+        justifyContent: "center"
+    },
+
+    containerNt: {
+       paddingTop: 20,
+       height: "100%",
+       alignItems: "center"
     },
 
     title: {

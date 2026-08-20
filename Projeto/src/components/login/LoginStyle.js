@@ -15,12 +15,12 @@ export const LoginStyle = StyleSheet.create({
 
   loginBox: {
     backgroundColor: "white",
-    height: 340,
+    height: 450,
     width: "80%",
     borderRadius: 5,
 
 
-    paddingTop: 30,
+    paddingTop: 50,
     padding: 10,
     gap: 20
   },
@@ -32,14 +32,15 @@ export const LoginStyle = StyleSheet.create({
 
   subTitle: {
     fontFamily: "Montserrat_300Light",
-    fontSize: 13,
+    fontSize: 15,
     fontWeight: 400,
     color: "#868585"
   },
 
   titleBox: {
     alignItems: "center",
-    gap: 10
+    gap: 10,
+    marginBottom: 30
   },
 
   inputContainer: {
@@ -49,7 +50,7 @@ export const LoginStyle = StyleSheet.create({
 
   inputText: {
     backgroundColor: "#F3F4F6",
-    height: 35,
+    height: 45,
     width: "100%",
     borderWidth: 1,
     borderStyle: "solid",
@@ -57,7 +58,8 @@ export const LoginStyle = StyleSheet.create({
     borderRadius: 3,
     padding: 10,
     outlineColor: "#0000002f",
-    color: "#4b4b4b"
+    color: "#4b4b4b",
+    fontSize: 16
   },
 
   text: {
@@ -72,7 +74,7 @@ export const LoginStyle = StyleSheet.create({
 
   button: {
     backgroundColor: "#10B981",
-    height: 35,
+    height: 45,
     width: "90%",
     borderRadius: 3,
     padding: 10,
@@ -84,5 +86,6 @@ export const LoginStyle = StyleSheet.create({
   buttonText: {
     color: "white",
     fontFamily: "Montserrat_700Bold",
+    fontSize: 16
   }
 });

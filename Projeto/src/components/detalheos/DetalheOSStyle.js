@@ -3,11 +3,14 @@ import { StyleSheet } from "react-native";
 export const DetalheOSStyle = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ffffff",
+    backgroundColor: "#F3F4F6",
     paddingHorizontal: 16,
     paddingTop: 16,
     paddingBottom: 12,
     gap: 20,
+  },
+  containerDetalheOs: {
+    flex: 1,
   },
   header: {
     marginBottom: 12,
@@ -24,22 +27,19 @@ export const DetalheOSStyle = StyleSheet.create({
     flex: 1,
     backgroundColor: "#ffffff",
     padding: 16,
-    borderWidth: 1,
-    borderColor: "#CBBBB4",
-    boderRadius: 20,
     borderRadius: 7,
-
+    boxShadow: " 5px 5px 3px #b5b5b561"
   },
   detalhes: {
     marginBottom: 16,
   },
   title: {
-    fontSize: 20,
+    fontSize: 18,
     fontFamily: "Montserrat_700Bold",
     color: "#221208",
   },
   subtitle: {
-    fontSize: 13,
+    fontSize: 12,
     fontFamily: "Montserrat_300Light",
     color: "#0e0d0d",
     marginTop: 2,
@@ -47,7 +47,7 @@ export const DetalheOSStyle = StyleSheet.create({
   Equipamento: {
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: 14,
+    marginBottom: 5
   },
   icon: {
     width: 22,
@@ -55,20 +55,19 @@ export const DetalheOSStyle = StyleSheet.create({
     marginRight: 12,
   },
   label: {
-    fontSize: 12,
+    fontSize: 10,
     fontFamily: "Montserrat_300Light",
     color: "#000000",
   },
   value: {
-    fontSize: 14,
+    fontSize: 12,
     fontFamily: "Montserrat_700Bold",
     color: "#221208",
     marginTop: 2,
   },
 
   descricao: {
-    marginTop: 8,
-    marginBottom: 16,
+    marginBottom: 8,
     borderTopWidth: 1,
     borderTopColor: "#CBBBB4",
     paddingTop: 16,
@@ -86,29 +85,27 @@ export const DetalheOSStyle = StyleSheet.create({
     lineHeight: 20,
   },
   imgdoproblema: {
-    marginBottom: 20,
+    marginBottom: 50,
   },
   image: {
     width: "100%",
     height: 180,
     borderRadius: 6,
-    marginTop: 8,
     backgroundColor: "#C4A89B",
   },
   buttonContainer: {
     paddingTop: 12,
   },
   button: {
-    backgroundColor: "#ffffff",
     paddingVertical: 14,
-    borderColor: "#3B4CCA",
+    borderColor: "#2563EB",
     borderWidth: 1,
     boderRadius: 20,
     alignItems: "center",
     borderRadius: 6,
   },
   buttonText: {
-    color: "#3B4CCA",
+    color: "#2563EB",
     fontSize: 16,
     fontFamily: "Montserrat_700Bold",
   },
